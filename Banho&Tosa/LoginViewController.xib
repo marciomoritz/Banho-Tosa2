@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Banho_Tosa" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DZ-bi-y7h">
+                    <rect key="frame" x="480" y="168" width="110" height="30"/>
+                    <animations/>
+                    <state key="normal" title="Primeiro acesso"/>
+                    <connections>
+                        <action selector="primeiroAcessoPressed:" destination="-1" eventType="touchUpInside" id="RrE-gT-g9f"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tela Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qx4-YS-1rE">
+                    <rect key="frame" x="261.5" y="60" width="77.5" height="20.5"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8H7-bP-NTU">
+                    <rect key="frame" x="281" y="110.5" width="38" height="30"/>
+                    <animations/>
+                    <state key="normal" title="Login"/>
+                    <connections>
+                        <action selector="loginPressed:" destination="-1" eventType="touchUpInside" id="Sf5-Ib-jh7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Qx4-YS-1rE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="Cc5-jX-0SD"/>
+                <constraint firstItem="1DZ-bi-y7h" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="168" id="FPP-ac-Ihh"/>
+                <constraint firstItem="8H7-bP-NTU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Kcg-9c-DBC"/>
+                <constraint firstAttribute="trailing" secondItem="1DZ-bi-y7h" secondAttribute="trailing" constant="10" id="Kh1-sR-cSQ"/>
+                <constraint firstItem="8H7-bP-NTU" firstAttribute="top" secondItem="Qx4-YS-1rE" secondAttribute="bottom" constant="30" id="UkK-06-EVf"/>
+                <constraint firstItem="Qx4-YS-1rE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bDf-Wd-R1v"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
